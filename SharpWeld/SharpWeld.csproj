@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6697CEBE-C67F-4950-A6BA-759326143A05}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SharpWeld</RootNamespace>
+    <AssemblyName>SharpWeld</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Utilities\RandomString.cs" />
+    <Compile Include="Utilities\Sample.cs" />
+    <Compile Include="SharpWeldMain.cs" />
+    <Compile Include="ClassProvider\AbstractObjectBuilder.cs" />
+    <Compile Include="ClassProvider\AssemblyBuilder.cs" />
+    <Compile Include="ClassProvider\AssemblyOpCodeBuilder.cs" />
+    <Compile Include="ClassProvider\Builder.cs" />
+    <Compile Include="ClassProvider\CSharpProvider.cs" />
+    <Compile Include="ClassProvider\Provider.cs" />
+    <Compile Include="Attributes\AbstractClassAttribute.cs" />
+    <Compile Include="Attributes\AttributeDecorator.cs" />
+    <Compile Include="Attributes\ClassAttribute.cs" />
+    <Compile Include="Attributes\InstanceAttribute.cs" />
+    <Compile Include="Attributes\MethodAttribute.cs" />
+    <Compile Include="Attributes\PropertyAttribute.cs" />
+    <Compile Include="Decorator.cs" />
+    <Compile Include="ObjectDecorator.cs" />
+    <Compile Include="ObjectInstantiator.cs" />
+    <Compile Include="CustomAttributes\AbstractMethodHandlerAttribute.cs" />
+    <Compile Include="CustomAttributes\InjectAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+    <Folder Include="ClassProvider\" />
+    <Folder Include="Attributes\" />
+    <Folder Include="CustomAttributes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+</Project>
