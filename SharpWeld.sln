@@ -5,12 +5,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpWeldTest", "SharpWeldT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpWeld", "SharpWeld\SharpWeld.csproj", "{6697CEBE-C67F-4950-A6BA-759326143A05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "Benchmark\Benchmark.csproj", "{0D6047BC-5C50-46C2-898E-59F4999FC589}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D6047BC-5C50-46C2-898E-59F4999FC589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6047BC-5C50-46C2-898E-59F4999FC589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6047BC-5C50-46C2-898E-59F4999FC589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6047BC-5C50-46C2-898E-59F4999FC589}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6697CEBE-C67F-4950-A6BA-759326143A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6697CEBE-C67F-4950-A6BA-759326143A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6697CEBE-C67F-4950-A6BA-759326143A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
