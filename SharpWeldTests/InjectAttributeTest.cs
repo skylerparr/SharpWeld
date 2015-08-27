@@ -26,17 +26,19 @@ namespace SharpWeldTest
 		[Test()]
         public void DecoratePropertyTest()
         {
-            AbstractObjectBuilder<MockInjectable> builder = new AbstractObjectBuilder<MockInjectable>(new AssemblyBuilder(new CSharpProvider()));
-            MockInjectable mock = builder.Construct(typeof(MockInjectable), null);
-            Decorator decorator = new ObjectDecorator(new ObjectInstantiator());
-            decorator.Decorate<MockInjectable>(mock);
+			AssemblyOpCodeBuilder builder = new AssemblyOpCodeBuilder();
+			MockInjectable mock = builder.BuildAssemblyFromType<MockInjectable>(typeof(MockInjectable), null);
+			Decorator decorator = new ObjectDecorator(new ObjectInstantiator());
+			decorator.Decorate<MockInjectable>(mock);
 
             Assert.IsNotNull(mock.Fire);
             Assert.IsTrue(mock.Fire is Fire);
 
             Assert.IsNotNull(mock.Water);
-            Assert.IsTrue(mock.Water is Water);
-        }
+			Assert.IsTrue(mock.Water is Water);
 
+			Assert.IsNotNull(mock.Earth);
+			Assert.IsTrue(mock.Earth is Earth);
+        }
     }
 }

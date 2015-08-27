@@ -30,7 +30,6 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Utilities\RandomString.cs" />
-    <Compile Include="Utilities\Sample.cs" />
     <Compile Include="ClassProvider\AbstractObjectBuilder.cs" />
     <Compile Include="ClassProvider\AssemblyBuilder.cs" />
     <Compile Include="ClassProvider\AssemblyOpCodeBuilder.cs" />

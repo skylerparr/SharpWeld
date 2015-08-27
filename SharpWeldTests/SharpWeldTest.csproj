@@ -65,6 +65,7 @@
     <Compile Include="InjectAttributeTest.cs" />
     <Compile Include="ObjectDecoratorTest.cs" />
     <Compile Include="ObjectInstantiatorTest.cs" />
+    <Compile Include="Mocks\Sample.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

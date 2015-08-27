@@ -39,4 +39,5 @@ namespace SharpWeldTest.CustomAttributeMocks
     public class Fire { }
 
     public class Water { }
+
 }
